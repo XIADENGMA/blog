@@ -75,7 +75,7 @@ var other = function() {
     }).then(function() {
         return botui.message.bot({
             delay: 1500,
-            content: "不过还是比较熟悉手机刷机、主机DIY与系统安装"
+            content: "不过还是比较熟悉单片机、电脑装机维修之类的"
         })
     }).then(function() {
         return botui.message.bot({
@@ -107,6 +107,14 @@ var other = function() {
         return botui.message.bot({
             delay: 1500,
             content: "才不咧，我可是%%￥￥#￥，哼！"
+        })
+    }).then(function() {
+        return botui.action.button({
+            delay: 1500,
+            action: [{
+                text: "哼！（＞人＜；）",
+                value: "next"
+            }]
         })
     }).then(function(res) {
         return botui.message.bot({
